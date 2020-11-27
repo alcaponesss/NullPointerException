@@ -265,6 +265,63 @@ public class Propiedad implements Serializable {
    
 }
 
+controladora principal
+
+
+package ControladoraGeneral;
+    import persistencia.ControladoraPersistencia;
+    import ControladoraGeneral.ControladoraLogin;
+    import Vista.GestionTasacion;
+import Vista.Login;
+
+/**
+ *
+ * @author matia
+ */
+public class ControladoraGneral {
+    
+    private  ControladoraLogin controladoralogin;
+    private ControladoraCliente controladoracliente;
+    private ContraladoraTasacion ContraladoraTasacione;
+     private ControladoraPropiedad ContraladoraPropiedad;
+     private ControladoraServicio ContraladoraServicio;
+     private ControladoraEdificio ControladoraEdificios;
+    public ControladoraGneral(){
+       
+        this.controladoralogin = new ControladoraLogin();
+        this.controladoracliente= new ControladoraCliente();
+        this.ContraladoraTasacione = new ContraladoraTasacion();
+        this.ContraladoraPropiedad = new ControladoraPropiedad();
+        this.ContraladoraServicio= new ControladoraServicio();
+        this.ControladoraEdificios= new ControladoraEdificio();
+    }
+
+    public ControladoraLogin getControladoralogin() {
+        return controladoralogin;
+    }
+
+    public ControladoraCliente getControladoracliente() {
+        return controladoracliente;
+    }
+
+    public ContraladoraTasacion getContraladoraTasacione() {
+        return ContraladoraTasacione;
+    }
+
+    public ControladoraPropiedad getContraladoraPropiedad() {
+        return ContraladoraPropiedad;
+    }
+
+    public ControladoraServicio getContraladoraServicio() {
+        return ContraladoraServicio;
+    }
+
+    public ControladoraEdificio getControladoraEdificios() {
+        return ControladoraEdificios;
+    }   
+}         
+
+
 Comienza la controladora 
 
 package ControladoraGeneral;
